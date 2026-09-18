@@ -7,7 +7,6 @@
   let filtered = [...projects], active = 0, imageIndex = 0, detailProject = null;
   let returnFocus = null, openedFromRoute = false;
   const dialog = $('project-dialog');
-  $('year').textContent = new Date().getFullYear();
 
   function buildDeck() {
     $('project-deck').replaceChildren(); $('project-index').replaceChildren();

@@ -25,4 +25,4 @@ Content was adapted from Owen Weiss's September 2023 Engineering Portfolio, the 
 
 ## Hosting
 
-GitHub Pages serves the root of the `main` branch. `.nojekyll` keeps the files static. Target address: https://weiss-o.github.io/ using the existing `Weiss-O/Weiss-O.github.io` repository. This version is a local preview only. Publication is pending Owen’s explicit approval.
+GitHub Pages serves the root of the `main` branch. `.nojekyll` keeps the files static. Live site: https://weiss-o.github.io/ using the `Weiss-O/Weiss-O.github.io` repository. GitHub Pages deploys updates pushed to `main`.
