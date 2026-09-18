@@ -1,1 +1,82 @@
-Hello World
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eeeae2">
+  <meta name="description" content="Owen Weiss — mechatronics engineering, mechanical design, embedded systems, and computer vision. Explore a collection of working prototypes and engineering projects.">
+  <meta property="og:title" content="Owen Weiss — Engineering & Projects">
+  <meta property="og:description" content="From first principles to working prototypes. Explore Owen Weiss’s engineering projects.">
+  <meta property="og:type" content="website">
+  <title>Owen Weiss — Engineering & Projects</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="projects.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="identity" href="#home" aria-label="Owen Weiss, home"><span class="monogram">ow<span>✳</span></span><span class="identity-name">Owen Weiss</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#home" data-nav="home">Home</a>
+      <a href="#projects" data-nav="projects">Projects <span class="nav-count">07</span></a>
+      <a class="github-link" href="https://github.com/Weiss-O" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1">
+    <section id="home-view" aria-labelledby="home-title">
+      <div class="home-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Engineering / Portfolio</p>
+        <h1 id="home-title">Owen<br><span class="last-name">Weiss<span class="title-dot">.</span></span></h1>
+        <div class="home-description"><span class="crosshair" aria-hidden="true">+</span><p>From first principles<br>to working prototypes.</p></div>
+        <p class="home-disciplines">Mechanical design. Embedded systems.<br>Computer vision. A little of everything.</p>
+        <a class="primary-link" href="#projects">Explore the projects <span aria-hidden="true">↗</span></a>
+      </div>
+      <a class="home-art" href="#projects" aria-label="Explore seven engineering projects">
+        <span class="art-registration top-left" aria-hidden="true">+</span><span class="art-registration bottom-right" aria-hidden="true">+</span>
+        <span class="art-note mono">A FEW THINGS I'VE BUILT</span>
+        <span class="paper-card paper-back"><img src="assets/images/motor-test.webp" alt="" width="825" height="1066"><span>02 / TEST SYSTEMS</span></span>
+        <span class="paper-card paper-middle"><img src="assets/images/brightspot-system.webp" alt="" width="485" height="1300"><span>01 / BRIGHTSPOT</span></span>
+        <span class="paper-card paper-front"><span class="paper-card-header">FIELD NOTES <span>03</span></span><img src="assets/images/calibration-system.webp" alt="CAD rendering of the automated force sensor calibration fixture" width="1094" height="682"><span>DESIGN → BUILD → TEST <b aria-hidden="true">↗</b></span></span>
+        <span class="art-caption mono">OPEN THE COLLECTION <span aria-hidden="true">↗</span></span>
+      </a>
+      <details class="background-section">
+        <summary><span>A little background</span><span class="mono">EXPERIENCE & EDUCATION</span><span class="background-toggle" aria-hidden="true">+</span></summary>
+        <div class="background-content">
+          <article class="experience-row"><h2>Cobionix</h2><div class="reserved-experience"><!-- Reserved for Owen's Cobionix work details, as requested. --></div></article>
+          <article class="experience-row"><h2>Christie Digital Systems <span>Feb–Aug 2024</span></h2><div><h3>Mechatronics Designer</h3><p>Developed a multi-axis precision metrology fixture from feasibility and error analysis through assembly and testing, targeting micron-level repeatability. Designed production-ready sheet metal using GD&T and tolerance stack analysis.</p></div></article>
+          <article class="experience-row"><h2>Forcen <span>Sep–Dec 2022</span></h2><div><h3>Mechatronics / Sensing R&D</h3><p>Designed and validated an automated force-sensor calibration fixture, reducing calibration time by approximately 90%.</p></div></article>
+          <article class="experience-row"><h2>University of Waterloo <span>Jan–Apr 2022</span></h2><div><h3>Motor Test Stand Design Co-op</h3><p>Designed and fabricated a flywheel-based motor test rig with adjustable mounting, instrumentation, and pneumatic braking.</p></div></article>
+          <article class="experience-row"><h2>Education</h2><div><h3>University of Waterloo</h3><p>BASc in Mechatronics Engineering, Dean’s Honours · May 2025</p><h3 class="education-second">TU Delft</h3><p>Exchange studies in Robotics and Control Systems · February 2024</p></div></article>
+        </div>
+      </details>
+      <div class="home-baseline"><span>BASc, Mechatronics Engineering · 2025<br><b>University of Waterloo · Dean’s Honours</b></span><span class="mono">A WORK IN PROGRESS<br><b>ALWAYS BUILDING.</b></span></div>
+    </section>
+    <section id="projects-view" aria-labelledby="projects-title" hidden>
+      <div class="projects-heading"><div><p class="eyebrow">The collection / 01—07</p><h1 id="projects-title" tabindex="-1">Selected <em>projects.</em></h1></div><p class="projects-intro">Ideas taken off the page.<br> Browse the builds. Get into the details.</p></div>
+      <div class="explorer-toolbar"><div class="filters" role="group" aria-label="Filter projects"><button class="filter active" data-filter="all" aria-pressed="true">All projects <span>07</span></button><button class="filter" data-filter="hardware" aria-pressed="false">Hardware</button><button class="filter" data-filter="software" aria-pressed="false">Software</button></div><span class="mono explorer-hint">← → TO EXPLORE</span></div>
+      <div class="project-stage" aria-label="Project carousel" aria-roledescription="carousel" tabindex="0">
+        <div class="stage-grid" aria-hidden="true"></div>
+        <span class="stage-label mono" aria-hidden="true">ENGINEERING / SELECTED WORK</span>
+        <div id="project-deck"></div>
+        <button class="round-button deck-prev" aria-label="Previous project">←</button>
+        <button class="round-button deck-next" aria-label="Next project">→</button>
+      </div>
+      <div class="project-caption"><div class="project-position mono"><span id="current-number">01</span><span class="position-line"></span><span id="total-number">07</span></div><div class="active-project-info" aria-live="polite" aria-atomic="true"><p id="active-context" class="eyebrow"></p><h2 id="active-title"></h2><p id="active-description"></p></div><button id="open-project" class="primary-link">Inside the project <span aria-hidden="true">↗</span></button></div>
+      <div id="project-index" class="project-index" role="group" aria-label="Choose a project"></div>
+      <p class="explorer-footer mono">SELECT A CARD TO LOOK CLOSER <span>DESIGNED. BUILT. LEARNED.</span></p>
+    </section>
+  </main>
+  <footer class="site-footer"><span>© <span id="year">2026</span> Owen Weiss</span><span>Curiosity, made tangible.<span class="footer-spark" aria-hidden="true">✳</span></span></footer>
+  <dialog id="project-dialog" aria-labelledby="detail-title">
+    <div class="dialog-topbar"><span class="mono" id="detail-number"></span><button class="close-button" id="close-dialog" aria-label="Close project details">Close <span aria-hidden="true">×</span></button></div>
+    <div class="detail-layout">
+      <div class="detail-visuals"><figure><a id="full-image-link" target="_blank" rel="noopener noreferrer" aria-label="Open full-size project image in a new tab"><img id="detail-image" alt=""><span class="image-expand" aria-hidden="true">↗</span></a><figcaption id="image-caption"></figcaption></figure><div class="gallery-toolbar"><span id="image-number" class="mono"></span><div><button id="image-prev" class="round-button" aria-label="Previous image">←</button><button id="image-next" class="round-button" aria-label="Next image">→</button></div></div><div id="gallery-thumbnails" aria-label="Choose a project image" role="group"></div></div>
+      <article class="detail-copy"><p id="detail-context" class="eyebrow"></p><h2 id="detail-title"></h2><p id="detail-summary" class="detail-summary"></p><div id="detail-tags" class="detail-tags"></div><div id="detail-sections"></div><div id="detail-links"></div><p id="detail-credit" class="detail-credit"></p></article>
+    </div>
+    <div class="dialog-bottom"><button id="detail-prev">← Previous project</button><span class="mono">KEEP EXPLORING</span><button id="detail-next">Next project →</button></div>
+  </dialog>
+  <noscript><div class="noscript-note">The interactive project explorer uses JavaScript. Enable it to browse the collection, or visit <a href="https://github.com/Weiss-O">my GitHub profile</a>.</div></noscript>
+</body>
+</html>
